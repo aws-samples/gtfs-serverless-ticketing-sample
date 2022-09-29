@@ -1,0 +1,27 @@
+{
+  "name": "gtfs-ticketing-service-sample",
+  "version": "1.0.0",
+  "description": "Sample ticketing system using GTFS data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "lerna exec -- npm install && lerna run release",
+    "deploy": "cd packages/infra && cdk deploy --require-approval never",
+    "deliver": "cd packages/web-ui && bash scripts/configure-ui.sh && npm run build && bash scripts/deliver-ui.sh",
+    "get-ui-url": "bash packages/web-ui/scripts/get-url.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pesama/gtfs-ticketing-service-sample.git"
+  },
+  "author": "Pelayo Sanchez Margareto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pesama/gtfs-ticketing-service-sample/issues"
+  },
+  "homepage": "https://github.com/pesama/gtfs-ticketing-service-sample#readme",
+  "devDependencies": {
+    "aws-cdk": "^2.43.1",
+    "lerna": "^4.0.0"
+  }
+}

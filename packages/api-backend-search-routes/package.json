@@ -1,0 +1,28 @@
+{
+  "name": "api-search-routes",
+  "version": "1.0.0",
+  "description": "API Backend to search for routes",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "release": "npm i && npm run build && rm -R node_modules && npm i --only prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pelayo Sanchez Margareto",
+  "license": "MIT",
+  "devDependencies": {
+    "@middy/core": "^3.4.0",
+    "@types/aws-lambda": "^8.10.106",
+    "@types/node": "^18.7.18",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1222.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^1.2.1",
+    "install": "^0.13.0",
+    "moment": "^2.29.4",
+    "npm": "^8.19.2"
+  }
+}

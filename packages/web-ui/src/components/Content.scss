@@ -1,0 +1,11 @@
+
+.itinerary-step {
+
+  &:not(:last-child) {
+    &::after {
+      content: ' > ';
+      font-weight: normal;
+      color: #aaa;
+    }
+  }
+}
