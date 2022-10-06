@@ -45,7 +45,7 @@ Once all these steps are ran you should have a deployed copy of this project in 
 
 ## Usage
 
-### Finding routes for my trip
+### Finding routes for your trip
 
 The main functionality this project offers is the capability to find routes from point A to point B on a given date. It does so by filtering the GTFS data imported using the information entered by the user. Users need to enter an Origin, a Destination, and an outbound date. With this data, the users are given a table of possible routes.
 
