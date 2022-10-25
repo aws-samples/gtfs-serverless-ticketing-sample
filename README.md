@@ -7,7 +7,6 @@ Welcome! This repository contains the sample project called GTFS ticketing, a sa
   * Information about transit stops.
   * Information about available routes from A to B on a given date.
 * Sample UI to execute the end to end use case.
-* Load simulator that executes scalability and latency tests on APIs on-demand.
 * Infrastructure as code for all components.
 
 This repository contains both infrastructure definitions and software components. You can deploy it in your AWS account using the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/).
